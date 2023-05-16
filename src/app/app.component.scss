@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
+
+.completed-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 5.5rem;
+    font-weight: 600;
+    font-family: "Codystar", cursive;
+    display: block;
+  }
+}
+
+.customized-height-container {
+  height: calc(100vh - 100px);
+}
+
+.stick {
+  height: 80%;
+  width: 3%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  border-radius: 5px 5px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+.stick-holder {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+}
+
+.block-placement {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+
+  .block-item {
+    height: 50px;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.temp-block-placement {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+
+  .block-item {
+    height: 50px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.block-creation-input {
+  appearance: none;
+  pointer-events: none;
+}
